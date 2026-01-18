@@ -166,7 +166,7 @@ export default function Home() {
             </div>
             <h3 className="text-2xl font-bold mb-3 text-[#4A4A4A]">Researchers</h3>
             <p className="text-[#6A6A6A] leading-relaxed">
-              Contribute to the growing body of knowledge in climbing biomechanics and injury prevention.
+              Contribute to the growing body of knowledge in climbing biomechanics and movement analysis.
             </p>
           </div>
         </div>
@@ -493,7 +493,7 @@ export default function Home() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#7DB9A3] mt-1">•</span>
-                Improve injury prevention methods
+                Improve movement screening methods
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#7DB9A3] mt-1">•</span>
@@ -514,7 +514,7 @@ export default function Home() {
                 Help Us Collect Data
               </h2>
               <p className="text-lg text-[#6A6A6A] max-w-2xl mx-auto leading-relaxed">
-                We're building a dataset to train our injury prevention model. Your climbing videos will help make it possible.
+                We're building a dataset to train our pattern recognition model. Your climbing videos will help make it possible.
                 
               </p>
             </div>
