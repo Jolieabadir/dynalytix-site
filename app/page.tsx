@@ -85,7 +85,7 @@ export default function Home() {
           href="#signup" 
           className="px-6 py-3 bg-gradient-to-r from-[#D4A5A5] to-[#C49494] text-white rounded-full hover:from-[#C49494] hover:to-[#B8898A] transition-all duration-300 text-sm font-medium shadow-lg shadow-[#D4A5A5]/25 hover:shadow-[#D4A5A5]/40 hover:scale-105 transform"
         >
-          Join Beta
+          Contribute Data
         </Link>
       </nav>
 
@@ -511,11 +511,11 @@ export default function Home() {
           <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl p-12 shadow-2xl border border-white/60">
             <div className="text-center mb-8">
               <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#4A4A4A] via-[#6A5A6A] to-[#4A4A4A] bg-clip-text text-transparent mb-4">
-                Join The Beta
+                Help Us Collect Data
               </h2>
               <p className="text-lg text-[#6A6A6A] max-w-2xl mx-auto leading-relaxed">
-                Be among the first to experience personalized climbing movement analysis.
-                Help us revolutionize how climbers understand their bodies.
+                We're building a dataset to train our injury prevention model. Your climbing videos will help make it possible.
+                
               </p>
             </div>
 
@@ -542,7 +542,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] rounded-2xl blur-lg opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
                 <button className="relative w-full py-4 bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] text-white rounded-2xl hover:from-[#C49494] hover:to-[#A598B8] transition-all duration-500 font-semibold text-lg hover:scale-105 transform shadow-2xl hover:shadow-3xl">
-                  Request Beta Access
+                  Sign Up to Contribute
                 </button>
               </div>
             </form>
