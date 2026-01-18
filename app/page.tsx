@@ -450,6 +450,27 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* What Happens to Your Data */}
+      <section className="max-w-4xl mx-auto px-8 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#4A4A4A] to-[#6A5A6A] bg-clip-text text-transparent">
+            What happens to your data?
+          </h2>
+        </div>
+
+        <div className="bg-white/70 backdrop-blur-lg rounded-3xl p-10 shadow-xl border border-white/50 space-y-6">
+          <p className="text-[#6A6A6A] leading-relaxed">
+            <span className="text-[#7DB9A3] font-semibold">→</span> <strong>Your video is processed, then deleted</strong> — we extract movement data, then the video is permanently removed when you click done.
+          </p>
+          <p className="text-[#6A6A6A] leading-relaxed">
+            <span className="text-[#B8A9C9] font-semibold">→</span> <strong>Only anonymized data remains</strong> — a CSV of joint angles and positions. No images, no video, nothing identifiable.
+          </p>
+          <p className="text-[#6A6A6A] leading-relaxed">
+            <span className="text-[#D4A5A5] font-semibold">→</span> <strong>Your email helps us stay in touch</strong> — we track top contributors for early access, offers, and giveaways.
+          </p>
+        </div>
+      </section>
       {/* Why Contribute */}
       <section className="max-w-6xl mx-auto px-8 py-20">
         <div className="text-center mb-16">
