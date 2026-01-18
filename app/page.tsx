@@ -433,8 +433,8 @@ export default function Home() {
               <span className="text-white font-bold">2</span>
             </div>
             <div className="bg-white/70 backdrop-blur-lg rounded-2xl p-6 flex-1 shadow-xl border border-white/50">
-              <h3 className="font-bold text-[#4A4A4A] mb-2">Phase 2: Personalization</h3>
-              <p className="text-[#6A6A6A]">Individual movement pattern analysis and custom recommendations</p>
+              <h3 className="font-bold text-[#4A4A4A] mb-2">Phase 2: Data Collection & ML Training</h3>
+              <p className="text-[#6A6A6A]">Gathering labeled movement data and training the injury pattern recognition model</p>
             </div>
           </div>
 
@@ -443,8 +443,8 @@ export default function Home() {
               <span className="text-white font-bold">3</span>
             </div>
             <div className="bg-white/70 backdrop-blur-lg rounded-2xl p-6 flex-1 shadow-xl border border-white/50">
-              <h3 className="font-bold text-[#4A4A4A] mb-2">Phase 3: Predictive Analytics</h3>
-              <p className="text-[#6A6A6A]">Injury risk pattern recognition and movement analysis tools</p>
+              <h3 className="font-bold text-[#4A4A4A] mb-2">Phase 3: Integration & Deployment</h3>
+              <p className="text-[#6A6A6A]">Deploy the trained model and integrate with user-facing tools</p>
             </div>
           </div>
         </div>
