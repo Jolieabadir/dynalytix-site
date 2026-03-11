@@ -106,6 +106,38 @@ export default function FMSDemoPage() {
         </p>
       </section>
 
+      {/* Try It Card */}
+      <section className="relative z-10 max-w-2xl mx-auto px-8 py-6">
+        <a
+          href="https://pure-illumination-production.up.railway.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group block bg-gradient-to-r from-[#D4A5A5]/10 via-white/80 to-[#B8A9C9]/10 backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-white/50 hover:shadow-2xl hover:shadow-[#D4A5A5]/20 transition-all duration-500 hover:scale-[1.02]"
+        >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold bg-gradient-to-r from-[#4A4A4A] to-[#6A5A6A] bg-clip-text text-transparent">
+                  Test it out for yourself
+                </h3>
+                <p className="text-sm text-[#8A8A8A]">Try the live FMS assessment tool</p>
+              </div>
+            </div>
+            <div className="w-10 h-10 bg-white/80 rounded-full flex items-center justify-center shadow-md group-hover:bg-gradient-to-r group-hover:from-[#D4A5A5] group-hover:to-[#B8A9C9] transition-all duration-300">
+              <svg className="w-5 h-5 text-[#6A6A6A] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </section>
+
       {/* Carousel */}
       <section className="relative z-10 max-w-5xl mx-auto px-8 py-12">
         <div className="relative bg-white/70 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/50 overflow-hidden">
