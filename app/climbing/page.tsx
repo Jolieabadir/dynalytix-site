@@ -475,11 +475,6 @@ export default function ClimbingPage() {
               </form>
             )}
 
-            <div className="mt-8 text-center">
-              <p className="text-sm text-[#8A8A8A]">
-                Join 500+ climbers already signed up. We&apos;ll notify you when beta access is available.
-              </p>
-            </div>
           </div>
         </div>
       </section>
