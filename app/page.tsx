@@ -1,5 +1,6 @@
 "use client";
 
+// Dynalytix beta signup form
 import { useState } from "react";
 import Link from "next/link";
 
