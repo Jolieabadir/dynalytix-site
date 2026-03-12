@@ -68,8 +68,8 @@ export default function Home() {
                 Movement Assessment Demo
               </h2>
               <p className="text-[#6A6A6A] leading-relaxed font-medium mb-6 flex-1">
-                Movement assessment powered by computer vision. Upload video, get pose data extraction,
-                scoring, patient &amp; provider reports with CPT code suggestions.
+                Functional movement assessment powered by computer vision. Upload video, get pose data extraction,
+                automated scoring, patient &amp; provider reports with CPT code suggestions.
               </p>
               <div className="flex items-center gap-2 text-[#D4A5A5] font-semibold">
                 <span>View Demo</span>

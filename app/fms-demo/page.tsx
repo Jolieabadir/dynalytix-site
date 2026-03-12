@@ -101,7 +101,7 @@ export default function FMSDemoPage() {
           Deep Squat Movement Assessment
         </h1>
         <p className="text-xl text-[#6A6A6A] max-w-2xl mx-auto leading-relaxed">
-          Computer vision–powered movement screening with automated pose extraction,
+          Computer vision–powered functional movement screening with automated pose extraction,
           scoring, and clinical report generation.
         </p>
       </section>
@@ -248,7 +248,7 @@ export default function FMSDemoPage() {
             <div className="w-14 h-14 bg-gradient-to-r from-[#B8A9C9]/20 to-[#A598B8]/20 rounded-2xl flex items-center justify-center mb-5 group-hover:from-[#B8A9C9] group-hover:to-[#A598B8] transition-all duration-300">
               <span className="text-xl group-hover:text-white">📊</span>
             </div>
-            <h3 className="text-lg font-bold mb-2 text-[#4A4A4A]">Movement Scoring</h3>
+            <h3 className="text-lg font-bold mb-2 text-[#4A4A4A]">Automated Movement Scoring</h3>
             <p className="text-[#6A6A6A] text-sm leading-relaxed">
               Score 0–3 with Quick Mode or detailed criteria. Bilateral difference and asymmetry detection built in.
             </p>
