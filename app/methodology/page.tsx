@@ -38,6 +38,9 @@ export default function MethodologyPage() {
           <Link href="/data-science" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
             Data Science
           </Link>
+          <span className="px-5 py-2.5 bg-gradient-to-r from-[#B8A9C9] to-[#A598B8] text-white rounded-full text-sm font-medium shadow-lg shadow-[#B8A9C9]/25">
+            Methodology
+          </span>
         </div>
       </nav>
 

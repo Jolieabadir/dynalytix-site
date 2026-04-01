@@ -89,15 +89,15 @@ export default function FMSDemoPage() {
           <Link href="/climbing" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
             Climbing
           </Link>
+          <span className="px-5 py-2.5 bg-gradient-to-r from-[#D4A5A5] to-[#C49494] text-white rounded-full text-sm font-medium shadow-lg shadow-[#D4A5A5]/25">
+            Movement Demo
+          </span>
           <Link href="/data-science" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
             Data Science
           </Link>
           <Link href="/methodology" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#B8A9C9] transition-colors text-sm font-medium">
             Methodology
           </Link>
-          <span className="px-5 py-2.5 bg-gradient-to-r from-[#D4A5A5] to-[#C49494] text-white rounded-full text-sm font-medium shadow-lg shadow-[#D4A5A5]/25">
-            Movement Demo
-          </span>
         </div>
       </nav>
 

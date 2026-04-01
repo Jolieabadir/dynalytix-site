@@ -35,6 +35,9 @@ export default function DataSciencePage() {
           <Link href="/fms-demo" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#D4A5A5] transition-colors text-sm font-medium">
             Movement Demo
           </Link>
+          <span className="px-5 py-2.5 bg-gradient-to-r from-[#7DB9A3] to-[#6AA892] text-white rounded-full text-sm font-medium shadow-lg shadow-[#7DB9A3]/25">
+            Data Science
+          </span>
           <Link href="/methodology" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#B8A9C9] transition-colors text-sm font-medium">
             Methodology
           </Link>

@@ -87,9 +87,9 @@ export default function ClimbingPage() {
           <Link href="/data-science" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
             Data Science
           </Link>
-          <a href="#signup" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
-            Join Beta
-          </a>
+          <Link href="/methodology" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#B8A9C9] transition-colors text-sm font-medium">
+            Methodology
+          </Link>
         </div>
       </nav>
 
