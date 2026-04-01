@@ -89,6 +89,9 @@ export default function FMSDemoPage() {
           <Link href="/climbing" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
             Climbing
           </Link>
+          <Link href="/methodology" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#B8A9C9] transition-colors text-sm font-medium">
+            Methodology
+          </Link>
           <span className="px-5 py-2.5 bg-gradient-to-r from-[#D4A5A5] to-[#C49494] text-white rounded-full text-sm font-medium shadow-lg shadow-[#D4A5A5]/25">
             Movement Demo
           </span>
@@ -226,6 +229,24 @@ export default function FMSDemoPage() {
             ))}
           </div>
         </div>
+
+        {/* Methodology Link */}
+        <div className="mt-8 text-center">
+          <Link
+            href="/methodology"
+            className="group inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-[#D4A5A5]/10 via-white/80 to-[#B8A9C9]/10 backdrop-blur-lg rounded-2xl border border-white/50 hover:shadow-xl hover:shadow-[#D4A5A5]/10 transition-all duration-500 hover:scale-[1.02]"
+          >
+            <span className="text-[#6A6A6A] group-hover:text-[#4A4A4A] transition-colors">
+              Want to know how it works under the hood?
+            </span>
+            <span className="font-semibold bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] bg-clip-text text-transparent group-hover:from-[#C49494] group-hover:to-[#A598B8]">
+              Read our methodology
+            </span>
+            <svg className="w-5 h-5 text-[#D4A5A5] group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+        </div>
       </section>
 
       {/* Features grid */}
@@ -264,24 +285,6 @@ export default function FMSDemoPage() {
             </p>
           </div>
         </div>
-
-        {/* Methodology Link */}
-        <div className="mt-12 text-center">
-          <Link
-            href="/methodology"
-            className="group inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-[#D4A5A5]/10 via-white/80 to-[#B8A9C9]/10 backdrop-blur-lg rounded-2xl border border-white/50 hover:shadow-xl hover:shadow-[#D4A5A5]/10 transition-all duration-500 hover:scale-[1.02]"
-          >
-            <span className="text-[#6A6A6A] group-hover:text-[#4A4A4A] transition-colors">
-              Want to know how it works under the hood?
-            </span>
-            <span className="font-semibold bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] bg-clip-text text-transparent group-hover:from-[#C49494] group-hover:to-[#A598B8]">
-              Read our methodology
-            </span>
-            <svg className="w-5 h-5 text-[#D4A5A5] group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
-        </div>
       </section>
 
       {/* CTA */}
@@ -313,9 +316,10 @@ export default function FMSDemoPage() {
             dynalytix
           </h3>
           <p className="text-[#8A8A8A] mb-6">Movement is data. Patterns are prevention.</p>
-          <div className="flex justify-center space-x-8 mb-6">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-6">
             <Link href="/" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Home</Link>
             <Link href="/climbing" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">Climbing</Link>
+            <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">Methodology</Link>
             <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Privacy Policy</Link>
             <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">Terms of Service</Link>
             <a href="mailto:hello@dynalytix.com" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">Contact</a>
