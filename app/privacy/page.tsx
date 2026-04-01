@@ -1,4 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — Dynalytix",
+  description: "Learn how Dynalytix collects, uses, and protects your data. Our privacy policy explains our data handling practices for movement analysis.",
+};
 
 export default function PrivacyPolicy() {
   return (
@@ -152,9 +158,11 @@ export default function PrivacyPolicy() {
                 access, alteration, or destruction.
               </p>
               <p className="leading-relaxed text-[#6A6A6A]">
-                Video files are processed to extract movement data and may be
-                stored temporarily during analysis. We use secure connections
-                (HTTPS) for all data transmission.
+                Video files are processed entirely in your browser using client-side
+                pose estimation (MediaPipe). Video is never uploaded to or stored on
+                our servers. Only the extracted pose data (joint angles, landmark
+                positions) and your labels are transmitted and stored. We use secure
+                connections (HTTPS) for all data transmission.
               </p>
             </section>
 
@@ -168,6 +176,13 @@ export default function PrivacyPolicy() {
                   platform:
                 </p>
                 <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#B8A9C9] mt-1.5">•</span>
+                    <span>
+                      <strong className="text-[#4A4A4A]">Supabase:</strong> For
+                      user authentication and database storage of pose data
+                    </span>
+                  </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#B8A9C9] mt-1.5">•</span>
                     <span>
@@ -297,23 +312,26 @@ export default function PrivacyPolicy() {
           <p className="text-[#8A8A8A] mb-6">
             Movement is data. Patterns are prevention.
           </p>
-          <div className="flex justify-center space-x-8 mb-6">
-            <Link
-              href="/privacy"
-              className="text-[#D4A5A5] transition-colors duration-300"
-            >
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-6">
+            <Link href="/" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
+              Home
+            </Link>
+            <Link href="/climbing" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">
+              Climbing
+            </Link>
+            <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
+              Movement Demo
+            </Link>
+            <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">
+              Methodology
+            </Link>
+            <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link
-              href="/terms"
-              className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300 hover:scale-110 transform"
-            >
+            <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">
               Terms of Service
             </Link>
-            <a
-              href="mailto:hello@dynalytix.com"
-              className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300 hover:scale-110 transform"
-            >
+            <a href="mailto:hello@dynalytix.com" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">
               Contact
             </a>
           </div>

@@ -1,4 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Movement Assessment Demo — Dynalytix",
+  description: "Computer vision-powered functional movement screening with automated pose extraction, scoring, and clinical report generation. Try the deep squat assessment tool.",
+  openGraph: {
+    title: "Movement Assessment Demo — Dynalytix",
+    description: "Computer vision-powered functional movement screening with automated pose extraction and scoring.",
+    type: "website",
+  },
+};
 
 export default function FMSDemoPage() {
   return (
@@ -146,6 +157,25 @@ export default function FMSDemoPage() {
         </div>
       </section>
 
+      {/* Compliance Note */}
+      <section className="relative z-10 max-w-4xl mx-auto px-8 pb-8">
+        <div className="bg-gradient-to-r from-[#7DB9A3]/10 to-[#6AA892]/10 rounded-2xl p-6 border border-[#7DB9A3]/20">
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 bg-gradient-to-r from-[#7DB9A3] to-[#6AA892] rounded-xl flex items-center justify-center flex-shrink-0">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div className="text-sm text-[#4A4A4A]">
+              <p className="font-semibold mb-1">For Clinicians</p>
+              <p className="text-[#6A6A6A]">
+                Our provider approval workflow is designed to comply with FDA Clinical Decision Support guidelines — the tool surfaces data, the clinician makes the decision. Video never leaves the browser. We&apos;re partnered with MedStatix for HIPAA-compliant clinical infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="relative z-10 max-w-4xl mx-auto px-8 py-16 text-center">
         <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-12 shadow-2xl border border-white/60">
@@ -178,6 +208,7 @@ export default function FMSDemoPage() {
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-6">
             <Link href="/" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Home</Link>
             <Link href="/climbing" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">Climbing</Link>
+            <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Movement Demo</Link>
             <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">Methodology</Link>
             <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Privacy Policy</Link>
             <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">Terms of Service</Link>

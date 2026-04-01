@@ -1,4 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service — Dynalytix",
+  description: "Terms of Service for Dynalytix movement analysis platform. Read our terms before using our services.",
+};
 
 export default function TermsOfService() {
   return (
@@ -327,23 +333,26 @@ export default function TermsOfService() {
           <p className="text-[#8A8A8A] mb-6">
             Movement is data. Patterns are prevention.
           </p>
-          <div className="flex justify-center space-x-8 mb-6">
-            <Link
-              href="/privacy"
-              className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300 hover:scale-110 transform"
-            >
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-6">
+            <Link href="/" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
+              Home
+            </Link>
+            <Link href="/climbing" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">
+              Climbing
+            </Link>
+            <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
+              Movement Demo
+            </Link>
+            <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">
+              Methodology
+            </Link>
+            <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link
-              href="/terms"
-              className="text-[#B8A9C9] transition-colors duration-300"
-            >
+            <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">
               Terms of Service
             </Link>
-            <a
-              href="mailto:hello@dynalytix.com"
-              className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300 hover:scale-110 transform"
-            >
+            <a href="mailto:hello@dynalytix.com" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">
               Contact
             </a>
           </div>

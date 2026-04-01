@@ -2,10 +2,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Movement Assessment Methodology | Dynalytix",
+  title: "Movement Assessment Methodology — Dynalytix",
   description: "How Dynalytix scores movement — open source architecture, clinical research behind the scoring, and dual-angle assessment system for functional movement screening.",
   openGraph: {
-    title: "Movement Assessment Methodology | Dynalytix",
+    title: "Movement Assessment Methodology — Dynalytix",
     description: "How Dynalytix scores movement — open source architecture, clinical research behind the scoring, and dual-angle assessment system for functional movement screening.",
     type: "website",
   },
@@ -29,9 +29,6 @@ export default function MovementAssessmentMethodologyPage() {
           <span className="text-[#6A6A6A] group-hover:text-[#B8A9C9] transition-colors font-medium">Methodology</span>
         </Link>
         <div className="flex items-center gap-4">
-          <Link href="/" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#4A4A4A] transition-colors text-sm font-medium">
-            Home
-          </Link>
           <Link href="/climbing" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
             Climbing
           </Link>
@@ -326,6 +323,19 @@ export default function MovementAssessmentMethodologyPage() {
             <p className="text-[#4A4A4A]">
               The system also computes <span className="font-semibold">bilateral asymmetry</span> — comparing left vs. right joint angles frame-by-frame and flagging significant differences. This supports clinical identification of compensatory movement patterns that may not be visible to the naked eye.
             </p>
+          </div>
+
+          {/* References */}
+          <div className="mt-10 pt-8 border-t border-[#E5E5E5]">
+            <h3 className="text-xl font-bold text-[#4A4A4A] mb-4">References</h3>
+            <ol className="space-y-3 text-sm text-[#6A6A6A]">
+              <li>
+                <span className="font-medium text-[#4A4A4A]">1.</span> Butler RJ, Plisky PJ, Southers C, Scoma C, Kiesel KB. Biomechanical analysis of the deep overhead squat for assessment of functional movement. <em>Clin Biomech.</em> 2010;25(10):1044-1049.
+              </li>
+              <li>
+                <span className="font-medium text-[#4A4A4A]">2.</span> Heredia-Jimenez J, Orantes-Gonzalez E, Soto-Hermoso VM. Assessing the deep squat using inertial sensors: A biomechanical analysis. <em>J Biomech.</em> 2021;116:110237.
+              </li>
+            </ol>
           </div>
         </div>
       </section>

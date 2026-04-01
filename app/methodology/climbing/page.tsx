@@ -2,10 +2,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Climbing Data Science | Dynalytix",
+  title: "Climbing Data Science — Dynalytix",
   description: "Why we collect climbing data, how we use it, and the machine learning pipeline turning your movement into injury prevention.",
   openGraph: {
-    title: "Climbing Data Science | Dynalytix",
+    title: "Climbing Data Science — Dynalytix",
     description: "Why we collect climbing data, how we use it, and the machine learning pipeline turning your movement into injury prevention.",
     type: "website",
   },
@@ -29,9 +29,6 @@ export default function ClimbingMethodologyPage() {
           <span className="text-[#6A6A6A] group-hover:text-[#7DB9A3] transition-colors font-medium">Methodology</span>
         </Link>
         <div className="flex items-center gap-4">
-          <Link href="/" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#4A4A4A] transition-colors text-sm font-medium">
-            Home
-          </Link>
           <Link href="/climbing" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
             Climbing
           </Link>
