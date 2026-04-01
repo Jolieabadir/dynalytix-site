@@ -264,6 +264,24 @@ export default function FMSDemoPage() {
             </p>
           </div>
         </div>
+
+        {/* Methodology Link */}
+        <div className="mt-12 text-center">
+          <Link
+            href="/methodology"
+            className="group inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-[#D4A5A5]/10 via-white/80 to-[#B8A9C9]/10 backdrop-blur-lg rounded-2xl border border-white/50 hover:shadow-xl hover:shadow-[#D4A5A5]/10 transition-all duration-500 hover:scale-[1.02]"
+          >
+            <span className="text-[#6A6A6A] group-hover:text-[#4A4A4A] transition-colors">
+              Want to know how it works under the hood?
+            </span>
+            <span className="font-semibold bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] bg-clip-text text-transparent group-hover:from-[#C49494] group-hover:to-[#A598B8]">
+              Read our methodology
+            </span>
+            <svg className="w-5 h-5 text-[#D4A5A5] group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+        </div>
       </section>
 
       {/* CTA */}
