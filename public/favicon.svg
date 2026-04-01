@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg1)"/>
+  <circle cx="256" cy="120" r="28" fill="#c9a0a0"/>
+  <line x1="256" y1="148" x2="256" y2="275" stroke="#c9a0a0" stroke-width="14" stroke-linecap="round"/>
+  <polyline points="256,190 190,160 140,130" fill="none" stroke="#c9a0a0" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="256,190 325,215 375,180" fill="none" stroke="#c9a0a0" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="256,275 210,345 185,415" fill="none" stroke="#c9a0a0" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="256,275 310,345 345,415" fill="none" stroke="#c9a0a0" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="190" cy="160" r="8" fill="#e8c5c5"/>
+  <circle cx="140" cy="130" r="6" fill="#e8c5c5"/>
+  <circle cx="325" cy="215" r="8" fill="#e8c5c5"/>
+  <circle cx="375" cy="180" r="6" fill="#e8c5c5"/>
+  <circle cx="210" cy="345" r="8" fill="#e8c5c5"/>
+  <circle cx="185" cy="415" r="6" fill="#e8c5c5"/>
+  <circle cx="310" cy="345" r="8" fill="#e8c5c5"/>
+  <circle cx="345" cy="415" r="6" fill="#e8c5c5"/>
+</svg>
