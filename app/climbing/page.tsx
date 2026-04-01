@@ -173,6 +173,24 @@ export default function ClimbingPage() {
         </div>
       </section>
 
+      {/* Demo Video */}
+      <section className="relative z-10 max-w-4xl mx-auto px-8 py-12">
+        <div className="relative bg-white/70 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/50 overflow-hidden p-4 md:p-6">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            className="w-full rounded-2xl shadow-lg"
+            style={{ aspectRatio: "16/9" }}
+          >
+            <source src="/climbing/demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
       {/* Who Is This For Section */}
       <section className="relative z-10 max-w-6xl mx-auto px-8 py-20">
         <div className="text-center mb-16 relative">
