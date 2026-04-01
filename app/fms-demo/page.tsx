@@ -112,7 +112,7 @@ export default function FMSDemoPage() {
       {/* Try It Card */}
       <section className="relative z-10 max-w-2xl mx-auto px-8 py-6">
         <a
-          href="https://pure-illumination-production.up.railway.app/"
+          href="https://analysis.dynalytix.net"
           target="_blank"
           rel="noopener noreferrer"
           className="group block bg-gradient-to-r from-[#D4A5A5]/10 via-white/80 to-[#B8A9C9]/10 backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-white/50 hover:shadow-2xl hover:shadow-[#D4A5A5]/20 transition-all duration-500 hover:scale-[1.02]"

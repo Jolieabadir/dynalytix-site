@@ -118,7 +118,7 @@ export default function ClimbingPage() {
           <div className="relative inline-block group">
             <div className="absolute inset-0 bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] rounded-full blur-xl opacity-60 group-hover:opacity-80 transition-opacity duration-300" />
             <a
-              href="https://zooming-bravery-production-1d4d.up.railway.app"
+              href="https://collect.dynalytix.net"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] text-white rounded-full hover:from-[#C49494] hover:to-[#A598B8] transition-all duration-500 hover:scale-110 text-lg font-semibold shadow-2xl shadow-[#D4A5A5]/30 transform hover:shadow-[#D4A5A5]/50"

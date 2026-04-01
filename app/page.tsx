@@ -58,8 +58,29 @@ export default function Home() {
       <div className="absolute top-1/2 left-1/4 w-48 h-48 bg-gradient-to-r from-[#F0E8F8] to-[#E0D4E8] blob opacity-30 blur-2xl" style={{ animationDelay: '3s' }} />
       <div className="absolute bottom-1/3 right-1/4 w-56 h-56 bg-gradient-to-r from-[#E8F0E8] to-[#D0E8D0] blob opacity-40 blur-2xl" style={{ animationDelay: '4s' }} />
 
+      {/* Navigation */}
+      <nav className="relative z-10 flex justify-between items-center px-8 py-6 max-w-6xl mx-auto backdrop-blur-md bg-white/20 rounded-full mt-6 border border-white/20 shadow-lg shadow-black/5">
+        <Link href="/" className="flex items-center gap-2">
+          <span className="text-[#4A4A4A] font-bold text-lg">dynalytix</span>
+        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/climbing" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
+            Climbing
+          </Link>
+          <Link href="/fms-demo" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#D4A5A5] transition-colors text-sm font-medium">
+            Movement Demo
+          </Link>
+          <Link href="/methodology" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#B8A9C9] transition-colors text-sm font-medium">
+            Methodology
+          </Link>
+          <a href="#signup" className="px-5 py-2.5 bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] text-white rounded-full text-sm font-medium shadow-lg shadow-[#D4A5A5]/25 hover:from-[#C49494] hover:to-[#A598B8] transition-all">
+            Join Beta
+          </a>
+        </div>
+      </nav>
+
       {/* Hero */}
-      <section className="relative z-10 max-w-4xl mx-auto px-8 pt-32 pb-16 text-center">
+      <section className="relative z-10 max-w-4xl mx-auto px-8 pt-16 pb-16 text-center">
         <div className="float relative">
           <div className="absolute -top-10 -left-10 w-20 h-20 bg-gradient-to-r from-[#D4A5A5]/20 to-[#B8A9C9]/20 rounded-full blur-xl" />
           <div className="absolute -top-5 -right-5 w-16 h-16 bg-gradient-to-r from-[#B8A9C9]/20 to-[#7DB9A3]/20 rounded-full blur-xl" />
@@ -227,14 +248,23 @@ export default function Home() {
           <p className="text-[#8A8A8A] mb-6">
             Movement is data. Patterns are prevention.
           </p>
-          <div className="flex justify-center space-x-8 mb-6">
-            <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300 hover:scale-110 transform">
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-6">
+            <Link href="/climbing" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">
+              Climbing
+            </Link>
+            <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
+              Movement Demo
+            </Link>
+            <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">
+              Methodology
+            </Link>
+            <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300 hover:scale-110 transform">
+            <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">
               Terms of Service
             </Link>
-            <a href="mailto:hello@dynalytix.com" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300 hover:scale-110 transform">
+            <a href="mailto:hello@dynalytix.com" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">
               Contact
             </a>
           </div>
