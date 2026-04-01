@@ -84,9 +84,6 @@ export default function ClimbingPage() {
           <Link href="/fms-demo" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#D4A5A5] transition-colors text-sm font-medium">
             Movement Demo
           </Link>
-          <Link href="/data-science" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
-            Data Science
-          </Link>
           <Link href="/methodology" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#B8A9C9] transition-colors text-sm font-medium">
             Methodology
           </Link>
@@ -165,7 +162,7 @@ export default function ClimbingPage() {
         {/* Data Science Link */}
         <div className="mt-6 text-center">
           <Link
-            href="/data-science"
+            href="/methodology/climbing"
             className="group inline-flex items-center gap-2 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors"
           >
             <span>Learn about the data science behind Dynalytix</span>
@@ -550,25 +547,22 @@ export default function ClimbingPage() {
             Movement is data. Patterns are prevention.
           </p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-6">
-            <Link href="/" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300 hover:scale-110 transform">
+            <Link href="/" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
               Home
             </Link>
-            <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300 hover:scale-110 transform">
+            <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
               Movement Demo
             </Link>
-            <Link href="/data-science" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300 hover:scale-110 transform">
-              Data Science
-            </Link>
-            <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300 hover:scale-110 transform">
+            <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">
               Methodology
             </Link>
-            <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300 hover:scale-110 transform">
+            <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300 hover:scale-110 transform">
+            <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">
               Terms of Service
             </Link>
-            <a href="mailto:hello@dynalytix.com" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300 hover:scale-110 transform">
+            <a href="mailto:hello@dynalytix.com" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">
               Contact
             </a>
           </div>
