@@ -1,75 +1,6 @@
-"use client";
-
 import Link from "next/link";
-import Image from "next/image";
-import { useState, useEffect, useCallback } from "react";
-
-const slides = [
-  {
-    src: "/fms-demo/1-upload.png",
-    title: "Upload Video",
-    description: "Upload a deep squat assessment video to begin movement analysis. Supports .mov, .mp4, and .avi formats.",
-  },
-  {
-    src: "/fms-demo/2-uploading.png",
-    title: "Pose Extraction",
-    description: "Our computer vision pipeline extracts pose data from every frame of your video automatically.",
-  },
-  {
-    src: "/fms-demo/3-skeleton.png",
-    title: "Skeleton Overlay & Frame Review",
-    description: "Review the extracted skeleton overlay frame-by-frame. Mark start and end frames to define the assessment window.",
-  },
-  {
-    src: "/fms-demo/4-assessment.png",
-    title: "Score the Movement",
-    description: "Score the Deep Squat from 0–3 using Quick Mode or detailed criteria. Add pain flags and clinical notes.",
-  },
-  {
-    src: "/fms-demo/5-completed.png",
-    title: "Completed Assessment",
-    description: "View saved assessments with frame ranges, scores, and tag additional frame segments as needed.",
-  },
-  {
-    src: "/fms-demo/6-export.png",
-    title: "Export Reports",
-    description: "Export data as a Patient Report with recommendations or a Provider Report with full clinical data and CPT codes.",
-  },
-  {
-    src: "/fms-demo/7-patient-report.png",
-    title: "Patient Report",
-    description: "Patient-friendly report showing assessment details, asymmetries detected, and recommended focus areas.",
-  },
-  {
-    src: "/fms-demo/8-provider-report.png",
-    title: "Provider Report — Scoring Criteria",
-    description: "Detailed scoring criteria with thresholds, bilateral differences, and asymmetry flags for clinical documentation.",
-  },
-  {
-    src: "/fms-demo/9-provider-detail.png",
-    title: "Provider Report — CPT Codes",
-    description: "Suggested CPT codes with descriptions and units for streamlined billing documentation.",
-  },
-];
 
 export default function FMSDemoPage() {
-  const [current, setCurrent] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-
-  const next = useCallback(() => {
-    setCurrent((c) => (c + 1) % slides.length);
-  }, []);
-
-  const prev = useCallback(() => {
-    setCurrent((c) => (c - 1 + slides.length) % slides.length);
-  }, []);
-
-  useEffect(() => {
-    if (!isAutoPlaying) return;
-    const interval = setInterval(next, 5000);
-    return () => clearInterval(interval);
-  }, [isAutoPlaying, next]);
-
   return (
     <div className="min-h-screen overflow-hidden relative bg-gradient-to-br from-[#FEFBFB] via-white to-[#F8F6FF]">
       {/* Floating blobs */}
@@ -141,93 +72,21 @@ export default function FMSDemoPage() {
         </a>
       </section>
 
-      {/* Carousel */}
-      <section className="relative z-10 max-w-5xl mx-auto px-8 py-12">
-        <div className="relative bg-white/70 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/50 overflow-hidden">
-          
-          {/* Slide counter */}
-          <div className="absolute top-6 right-6 z-20 bg-white/80 backdrop-blur-md rounded-full px-4 py-2 shadow-lg border border-white/50">
-            <span className="text-sm font-semibold text-[#4A4A4A]">{current + 1}</span>
-            <span className="text-sm text-[#AFAFAF]"> / {slides.length}</span>
-          </div>
-
-          {/* Image area */}
-          <div
-            className="relative w-full overflow-hidden bg-gradient-to-br from-[#F8F6FF] to-[#FEFBFB]"
-            style={{ aspectRatio: "16/9.5" }}
+      {/* Demo Video */}
+      <section className="relative z-10 max-w-3xl mx-auto px-8 py-12">
+        <div className="relative bg-white/70 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/50 overflow-hidden p-4 md:p-6">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            className="w-full rounded-2xl shadow-lg"
+            style={{ aspectRatio: "1/1" }}
           >
-            {slides.map((slide, i) => (
-              <div
-                key={i}
-                className="absolute inset-0 transition-all duration-700 ease-in-out flex items-center justify-center p-4"
-                style={{
-                  opacity: i === current ? 1 : 0,
-                  transform: i === current ? "scale(1)" : "scale(0.95)",
-                  pointerEvents: i === current ? "auto" : "none",
-                }}
-              >
-                <Image
-                  src={slide.src}
-                  alt={slide.title}
-                  width={1400}
-                  height={788}
-                  className="rounded-xl shadow-lg object-contain max-h-full"
-                  priority={i === 0}
-                />
-              </div>
-            ))}
-
-            {/* Nav arrows */}
-            <button
-              onClick={() => { prev(); setIsAutoPlaying(false); }}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/80 backdrop-blur-md rounded-full shadow-lg border border-white/50 flex items-center justify-center hover:bg-white transition-colors group"
-              aria-label="Previous slide"
-            >
-              <svg className="w-5 h-5 text-[#6A6A6A] group-hover:text-[#D4A5A5] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button
-              onClick={() => { next(); setIsAutoPlaying(false); }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white/80 backdrop-blur-md rounded-full shadow-lg border border-white/50 flex items-center justify-center hover:bg-white transition-colors group"
-              aria-label="Next slide"
-            >
-              <svg className="w-5 h-5 text-[#6A6A6A] group-hover:text-[#D4A5A5] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-
-          {/* Caption area */}
-          <div className="p-8 text-center">
-            <div className="flex items-center justify-center gap-3 mb-3">
-              <div className="w-8 h-8 bg-gradient-to-r from-[#D4A5A5] to-[#C49494] rounded-full flex items-center justify-center shadow-md">
-                <span className="text-white text-sm font-bold">{current + 1}</span>
-              </div>
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-[#4A4A4A] to-[#6A5A6A] bg-clip-text text-transparent">
-                {slides[current].title}
-              </h3>
-            </div>
-            <p className="text-[#6A6A6A] leading-relaxed max-w-2xl mx-auto">
-              {slides[current].description}
-            </p>
-          </div>
-
-          {/* Dot indicators */}
-          <div className="flex justify-center gap-2 pb-6">
-            {slides.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => { setCurrent(i); setIsAutoPlaying(false); }}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  i === current
-                    ? "w-8 bg-gradient-to-r from-[#D4A5A5] to-[#C49494]"
-                    : "w-2 bg-[#E5E5E5] hover:bg-[#D4A5A5]/50"
-                }`}
-                aria-label={`Go to slide ${i + 1}`}
-              />
-            ))}
-          </div>
+            <source src="/fms-demo/demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         {/* Methodology Link */}
