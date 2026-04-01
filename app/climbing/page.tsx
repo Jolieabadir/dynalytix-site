@@ -132,6 +132,37 @@ export default function ClimbingPage() {
         </div>
       </section>
 
+      {/* Try It Card */}
+      <section className="relative z-10 max-w-2xl mx-auto px-8 py-6">
+        <a
+          href="https://collect.dynalytix.net"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group block bg-gradient-to-r from-[#7DB9A3]/10 via-white/80 to-[#6AA892]/10 backdrop-blur-lg rounded-2xl p-6 shadow-xl border border-white/50 hover:shadow-2xl hover:shadow-[#7DB9A3]/20 transition-all duration-500 hover:scale-[1.02]"
+        >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-gradient-to-r from-[#7DB9A3] to-[#6AA892] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold bg-gradient-to-r from-[#4A4A4A] to-[#6A5A6A] bg-clip-text text-transparent">
+                  Try the Data Collection Tool
+                </h3>
+                <p className="text-sm text-[#8A8A8A]">Upload your climbing videos and contribute to the dataset</p>
+              </div>
+            </div>
+            <div className="w-10 h-10 bg-white/80 rounded-full flex items-center justify-center shadow-md group-hover:bg-gradient-to-r group-hover:from-[#7DB9A3] group-hover:to-[#6AA892] transition-all duration-300">
+              <svg className="w-5 h-5 text-[#6A6A6A] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </section>
+
       {/* Who Is This For Section */}
       <section className="relative z-10 max-w-6xl mx-auto px-8 py-20">
         <div className="text-center mb-16 relative">
