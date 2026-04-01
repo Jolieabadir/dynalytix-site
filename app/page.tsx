@@ -70,8 +70,8 @@ export default function Home() {
           <Link href="/fms-demo" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#D4A5A5] transition-colors text-sm font-medium">
             Movement Demo
           </Link>
-          <Link href="/methodology" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#B8A9C9] transition-colors text-sm font-medium">
-            Methodology
+          <Link href="/data-science" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
+            Data Science
           </Link>
           <a href="#signup" className="px-5 py-2.5 bg-gradient-to-r from-[#D4A5A5] to-[#B8A9C9] text-white rounded-full text-sm font-medium shadow-lg shadow-[#D4A5A5]/25 hover:from-[#C49494] hover:to-[#A598B8] transition-all">
             Join Beta
@@ -254,6 +254,9 @@ export default function Home() {
             </Link>
             <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">
               Movement Demo
+            </Link>
+            <Link href="/data-science" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">
+              Data Science
             </Link>
             <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">
               Methodology

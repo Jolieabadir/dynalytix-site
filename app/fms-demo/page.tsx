@@ -89,6 +89,9 @@ export default function FMSDemoPage() {
           <Link href="/climbing" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
             Climbing
           </Link>
+          <Link href="/data-science" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
+            Data Science
+          </Link>
           <Link href="/methodology" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#B8A9C9] transition-colors text-sm font-medium">
             Methodology
           </Link>
@@ -319,6 +322,7 @@ export default function FMSDemoPage() {
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-6">
             <Link href="/" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Home</Link>
             <Link href="/climbing" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">Climbing</Link>
+            <Link href="/data-science" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">Data Science</Link>
             <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">Methodology</Link>
             <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Privacy Policy</Link>
             <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">Terms of Service</Link>

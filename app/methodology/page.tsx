@@ -35,6 +35,9 @@ export default function MethodologyPage() {
           <Link href="/fms-demo" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#D4A5A5] transition-colors text-sm font-medium">
             Movement Demo
           </Link>
+          <Link href="/data-science" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
+            Data Science
+          </Link>
         </div>
       </nav>
 
@@ -532,8 +535,9 @@ export default function MethodologyPage() {
           <p className="text-[#8A8A8A] mb-6">Movement is data. Patterns are prevention.</p>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-6">
             <Link href="/" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Home</Link>
-            <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Movement Demo</Link>
             <Link href="/climbing" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">Climbing</Link>
+            <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Movement Demo</Link>
+            <Link href="/data-science" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">Data Science</Link>
             <Link href="/privacy" className="text-[#8A8A8A] hover:text-[#D4A5A5] transition-colors duration-300">Privacy Policy</Link>
             <Link href="/terms" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300">Terms of Service</Link>
             <a href="mailto:hello@dynalytix.com" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300">Contact</a>

@@ -84,8 +84,8 @@ export default function ClimbingPage() {
           <Link href="/fms-demo" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#D4A5A5] transition-colors text-sm font-medium">
             Movement Demo
           </Link>
-          <Link href="/methodology" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#B8A9C9] transition-colors text-sm font-medium">
-            Methodology
+          <Link href="/data-science" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
+            Data Science
           </Link>
           <a href="#signup" className="px-5 py-2.5 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors text-sm font-medium">
             Join Beta
@@ -161,6 +161,19 @@ export default function ClimbingPage() {
             </div>
           </div>
         </a>
+
+        {/* Data Science Link */}
+        <div className="mt-6 text-center">
+          <Link
+            href="/data-science"
+            className="group inline-flex items-center gap-2 text-[#6A6A6A] hover:text-[#7DB9A3] transition-colors"
+          >
+            <span>Learn about the data science behind Dynalytix</span>
+            <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
+        </div>
       </section>
 
       {/* Who Is This For Section */}
@@ -542,6 +555,9 @@ export default function ClimbingPage() {
             </Link>
             <Link href="/fms-demo" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300 hover:scale-110 transform">
               Movement Demo
+            </Link>
+            <Link href="/data-science" className="text-[#8A8A8A] hover:text-[#7DB9A3] transition-colors duration-300 hover:scale-110 transform">
+              Data Science
             </Link>
             <Link href="/methodology" className="text-[#8A8A8A] hover:text-[#B8A9C9] transition-colors duration-300 hover:scale-110 transform">
               Methodology
